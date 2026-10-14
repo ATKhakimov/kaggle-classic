@@ -1,0 +1,9 @@
+html[data-kcr-enabled="true"] img[src*="/static/images/medals/gold-medal-new.svg"] {
+  content: url("chrome-extension://__MSG_@@extension_id__/assets/medals/goldl@2x.png") !important;
+}
+html[data-kcr-enabled="true"] img[src*="/static/images/medals/silver-medal-new.svg"] {
+  content: url("chrome-extension://__MSG_@@extension_id__/assets/medals/silverl@2x.png") !important;
+}
+html[data-kcr-enabled="true"] img[src*="/static/images/medals/bronze-medal-new.svg"] {
+  content: url("chrome-extension://__MSG_@@extension_id__/assets/medals/bronzel@2x.png") !important;
+}

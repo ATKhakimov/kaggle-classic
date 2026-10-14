@@ -1,0 +1,63 @@
+html:not([data-kcr-enabled="false"])
+  [data-testid="avatar-image"] + svg circle[fill="none"]:is(
+    [style*="rgb(179, 200, 206)" i],
+    [style*="rgb(32, 190, 255)" i],
+    [style*="rgb(179,200,206)" i],
+    [style*="rgb(32,190,255)" i],
+    [style*="#b3c8ce" i],
+    [style*="#20beff" i],
+    [stroke="#b3c8ce" i],
+    [stroke="#20beff" i],
+    [stroke="rgb(179, 200, 206)" i],
+    [stroke="rgb(32, 190, 255)" i]
+  ) {
+  stroke: #20beff !important;
+}
+
+html:not([data-kcr-enabled="false"])
+  [data-testid="avatar-image"] + svg circle[fill="none"]:is(
+    [style*="rgb(145, 145, 255)" i],
+    [style*="rgb(129, 72, 253)" i],
+    [style*="rgb(145,145,255)" i],
+    [style*="rgb(129,72,253)" i],
+    [style*="#9191ff" i],
+    [style*="#8148fd" i],
+    [stroke="#9191ff" i],
+    [stroke="#8148fd" i],
+    [stroke="rgb(145, 145, 255)" i],
+    [stroke="rgb(129, 72, 253)" i]
+  ) {
+  stroke: #8148fd !important;
+}
+
+html:not([data-kcr-enabled="false"])
+  [data-testid="avatar-image"] + svg circle[fill="none"]:is(
+    [style*="rgb(255, 196, 18)" i],
+    [style*="rgb(235, 204, 41)" i],
+    [style*="rgb(255,196,18)" i],
+    [style*="rgb(235,204,41)" i],
+    [style*="#ffc412" i],
+    [style*="#ebcc29" i],
+    [stroke="#ffc412" i],
+    [stroke="#ebcc29" i],
+    [stroke="rgb(255, 196, 18)" i],
+    [stroke="rgb(235, 204, 41)" i]
+  ) {
+  stroke: #ebcc29 !important;
+}
+
+html:not([data-kcr-enabled="false"])
+  [data-testid="avatar-image"] + svg circle[fill="none"]:is(
+    [style*="rgb(255, 106, 0)" i],
+    [style*="rgb(255, 92, 25)" i],
+    [style*="rgb(255,106,0)" i],
+    [style*="rgb(255,92,25)" i],
+    [style*="#ff6a00" i],
+    [style*="#ff5c19" i],
+    [stroke="#ff6a00" i],
+    [stroke="#ff5c19" i],
+    [stroke="rgb(255, 106, 0)" i],
+    [stroke="rgb(255, 92, 25)" i]
+  ) {
+  stroke: #ff5c19 !important;
+}

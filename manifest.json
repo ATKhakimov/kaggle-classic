@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Kaggle Classic",
+  "version": "0.1.0",
+  "description": "Make Kaggle classic again! Restore classic colors, fonts, buttons, medals, and avatar rings.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Kaggle Classic",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.kaggle.com/*", "https://kaggle.com/*"],
+      "css": ["rings.css", "classic.css", "medals.css"],
+      "js": ["classic.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["assets/legacy-logo.svg", "assets/legacy-plus.svg", "assets/inter-latin.woff2", "assets/medals/goldl@2x.png", "assets/medals/silverl@2x.png", "assets/medals/bronzel@2x.png"],
+    "matches": ["https://www.kaggle.com/*", "https://kaggle.com/*"]
+  }]
+}

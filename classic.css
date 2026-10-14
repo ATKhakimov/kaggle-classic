@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "KCR Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("chrome-extension://__MSG_@@extension_id__/assets/inter-latin.woff2") format("woff2");
+}
+html[data-kcr-enabled="true"] {
+  --kcr-accent: #20beff;
+  --kcr-font: "KCR Inter", Inter, Arial, sans-serif;
+}
+html[data-kcr-enabled="true"][data-kcr-theme="dark"] {
+  --kcr-page: #1c1d20;
+  --kcr-fg: #e8eaed;
+  --kcr-muted: #9aa0a6;
+  --kcr-outline: #bdc1c6;
+  --kcr-create: #2e3033;
+  --kcr-selected: #3c4043;
+  --kcr-indicator: #e8eaed;
+}
+html[data-kcr-enabled="true"][data-kcr-theme="light"] {
+  --kcr-page: #fff;
+  --kcr-fg: #202124;
+  --kcr-muted: #5f6368;
+  --kcr-outline: #dadce0;
+  --kcr-create: #fff;
+  --kcr-selected: #f1f3f4;
+  --kcr-indicator: #202124;
+}
+html[data-kcr-enabled="true"] body {
+  background-color: var(--kcr-page) !important;
+  font-family: var(--kcr-font) !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="nav-menu-holder"] { margin-left: 12px !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="nav-menu-button"] {
+  width: 48px !important;
+  height: 48px !important;
+  min-width: 48px !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-button"] {
+  background: var(--kcr-create) !important;
+  color: var(--kcr-fg) !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  min-width: 135px;
+  height: 48px;
+  margin: 11px 0 11px 6px !important;
+  padding: 0 24px 0 12px !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  box-shadow: none !important;
+  clip-path: none !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-content"] {
+  display: flex !important;
+  align-items: center !important;
+  position: static !important;
+  width: auto !important;
+  height: 100% !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-shape"] { display: none !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="create-icon"] {
+  color: #20beff !important;
+  font-weight: 400 !important;
+}
+html[data-kcr-enabled="true"][data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-role] [data-kcr-role="create-icon-mask"][data-kcr-role] {
+  background: url("chrome-extension://__MSG_@@extension_id__/assets/legacy-plus.svg") center/contain no-repeat !important;
+  background-color: transparent !important;
+  mask: none !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+html[data-kcr-enabled="true"][data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-role] [data-kcr-role="create-icon-holder"][data-kcr-role] {
+  width: 36px !important;
+  height: 36px !important;
+  flex: 0 0 36px;
+  background: transparent !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-collapsed="false"] [data-kcr-role="create-label-holder"] {
+  display: flex !important;
+  width: auto !important;
+  grid-template-columns: none !important;
+  padding: 0 !important;
+  margin: 0 0 0 12px !important;
+  clip-path: none !important;
+  mask: none !important;
+  overflow: visible !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-collapsed="true"] [data-kcr-role="create-label-holder"] { display: none !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="nav-icon"][data-kcr-role] {
+  background: transparent !important;
+  mask: none !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="nav-icon"]::before {
+  content: attr(data-kcr-glyph);
+  font-family: "Google Symbols";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-variation-settings: "FILL" 0, "wght" 400;
+  font-feature-settings: "liga";
+  display: block;
+  color: var(--kcr-muted);
+}
+html[data-kcr-enabled="true"] [data-kcr-role="nav-active"] [data-kcr-role="nav-icon"]::before { color: var(--kcr-fg); }
+html[data-kcr-enabled="true"][data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-role] [data-kcr-role="create-label"][data-kcr-role] {
+  color: var(--kcr-fg) !important;
+  font-weight: 400 !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="create-button"][data-kcr-collapsed="true"] {
+  min-width: 48px;
+  width: 48px;
+  padding: 6px !important;
+  justify-content: center !important;
+}
+html[data-kcr-enabled="true"][data-kcr-theme] [data-kcr-role="competition-title"] { font-family: zeitung, var(--kcr-font) !important; }
+html[data-kcr-enabled="true"][data-kcr-theme="light"] [data-kcr-role="create-button"] { border: 1px solid #dadce0 !important; }
+html[data-kcr-enabled="true"][data-kcr-theme="light"] [data-kcr-role="create-button"][data-kcr-collapsed="false"] { padding-inline: 11px 23px !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="nav-active"] {
+  border-radius: 0 !important;
+  margin-inline: 0 !important;
+  background: var(--kcr-selected) !important;
+  position: relative;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="nav-active"]::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--kcr-indicator);
+  border-radius: 3px 0 0 3px;
+  pointer-events: none;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="nav-active"] [data-kcr-role="nav-indicator"] { display: none !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="nav-active"] > :is(a,div) { border-radius: 0 !important; background: transparent !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="site-logo"] { position: static; }
+html[data-kcr-enabled="true"] [data-kcr-role="site-logo"] > :not([data-kcr-legacy-logo]) { display: none !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="site-logo"] > [data-kcr-legacy-logo] {
+  display: inline !important;
+  position: static;
+  transform: none;
+  width: 82px;
+  height: auto;
+  vertical-align: baseline;
+  object-fit: fill;
+  pointer-events: none;
+}
+[data-kcr-legacy-logo] { display: none; }
+html[data-kcr-enabled="true"] :is([data-kcr-role="primary-button"], [data-kcr-role="outline-button"]) {
+  border-radius: 999px !important;
+  font-family: var(--kcr-font) !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  letter-spacing: normal !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="primary-button"]:not(:disabled):not([aria-disabled="true"]) {
+  background: #fff !important;
+  color: #202124 !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="outline-button"]:not(:disabled):not([aria-disabled="true"]) {
+  background: transparent !important;
+  border-color: var(--kcr-outline) !important;
+  color: var(--kcr-fg) !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="team-name-label"] {
+  text-transform: uppercase !important;
+  font-family: var(--kcr-font) !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="candidate-marker"] {
+  background-color: #20beff !important;
+  border-color: #20beff !important;
+  color: #20beff !important;
+}
+html[data-kcr-enabled="true"] [data-kcr-role="candidate-row"] { border-right-color: #20beff !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="submission-spinner"] { color: #20beff !important; stroke: #20beff !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="timeline-entry"] { background-color: #20beff !important; }
+html[data-kcr-enabled="true"] [data-kcr-role="timeline-close"] { background-color: #1ccd76 !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"] + svg[width="24"][height="24"]:not([data-kcr-ring="hidden"]) circle { stroke-width: 2 !important; r: 11px !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"]:has(+ svg[width="24"][height="24"]:not([data-kcr-ring="hidden"])) { width: 18px !important; height: 18px !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"] + svg[width="32"][height="32"]:not([data-kcr-ring="hidden"]) circle { stroke-width: 2 !important; r: 15px !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"]:has(+ svg[width="32"][height="32"]:not([data-kcr-ring="hidden"])) { width: 24px !important; height: 24px !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"] + svg[width="48"][height="48"]:not([data-kcr-ring="hidden"]) circle { stroke-width: 3 !important; r: 22.5px !important; }
+html[data-kcr-enabled="true"] [data-testid="avatar-image"]:has(+ svg[width="48"][height="48"]:not([data-kcr-ring="hidden"])) { width: 38px !important; height: 38px !important; }
