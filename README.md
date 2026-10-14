@@ -8,7 +8,7 @@ Restore classic colors, fonts, buttons, sidebar, medals, and avatar rings on Kag
 
 ## Install in Chrome
 
-1. Download the ZIP and extract it, or clone the repository.
+1. Download the [extension ZIP](https://github.com/ATKhakimov/kaggle-classic/releases/download/v0.1.0/kaggle-classic-0.1.0.zip) and extract it, or clone the repository.
 2. Open `chrome://extensions`.
 3. Turn on Developer mode, then click **Load unpacked**.
 4. Select the folder containing `manifest.json`, then refresh Kaggle.
